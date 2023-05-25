@@ -1,4 +1,4 @@
-module prosemirror
+module github.com/wenj91/prosemirror-go
 
 go 1.20
 
