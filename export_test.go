@@ -2,6 +2,7 @@ package prosemirror
 
 import (
 	"encoding/json"
+	"fmt"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -21,6 +22,7 @@ func Test_Render_HTML(t *testing.T) {
 
 	config := NewHTMLConfig()
 	html := Render(&editorState, config)
+	fmt.Println(html)
 
 	assert.Equal(t, expectedHTML, html, "They should be equal")
 }
